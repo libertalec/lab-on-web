@@ -1,0 +1,10 @@
+.progress {
+    width: 100%;
+    background: url("../img/1533326959_low-poly-background-generator-min.png");
+    text-align: center;
+    list-style: none;
+}
+
+#mentor {
+    text-decoration: underline;
+}

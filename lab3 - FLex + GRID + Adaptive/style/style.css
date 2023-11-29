@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    background-image: url('../img/background/bg.jpg');
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(222, 222, 222, 1);
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.descriptionPart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /*background: #202020;*/
+}
+
+
+/*Header*/
+.Header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    /*background: rgba(50, 50, 50, 0.7);*/
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 7%;
+    z-index: 3;
+}
+
+#letter {
+    height: 80%;
+}
+
+
+.nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7.5%;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.18rem 0.37rem;
+    color: #DEDEDE;
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border: 2px transparent solid;
+    transition: all .5s;
+}
+
+.nav a:hover {
+    border-color: #DEDEDE;
+    transition: all .5s;
+}
+
+#navHome {
+    margin-right: 17%;
+}
+
+#navWorks {
+    margin-right: 19%;
+}
+
+/*Intro*/
+.intro {
+    display: flex;
+    height: 49vh;
+    margin-top: 25vh;
+    margin-left: 7%;
+    margin-right: 14%;
+}
+
+.introGreeting {
+    width: 61%;
+    height: 100%;
+}
+
+.presentation {
+    width: 62%;
+    margin-bottom: 6%;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.37rem;
+}
+
+.introGreetingDescription {
+    width: 62%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #959595;
+    line-height: 2.25rem;
+    letter-spacing: -0.5px;
+}
+
+.authorPhoto {
+    width: 38%;
+    height: 100%;
+}
+
+#myPhoto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+main {
+    height: 100vh;
+}
+
+.imageTable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 100%;
+    /*background: #202020;*/
+}
+
+.myWorks {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 600px) {
+    .nav {
+        margin-right: 30%;
+    }
+
+    .presentation{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .introGreetingDescription {
+        font-size: 1rem;
+    }
+}
